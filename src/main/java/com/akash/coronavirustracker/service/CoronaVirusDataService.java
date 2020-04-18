@@ -29,7 +29,7 @@ public class CoronaVirusDataService<records> {
     }
 
     @PostConstruct
-    @Scheduled(cron = "* * * * * *")
+    @Scheduled(cron = "* * 1 * * *")
     public void fetchVirusData() throws IOException {
        //HttpClient httpClient = HttpClient.;
         List<RequestReport> newListReport = new ArrayList<>();
